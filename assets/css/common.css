@@ -1,0 +1,37 @@
+/* Common classes */
+
+.container {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.bg-blue-01 {
+  background-color: var(--blue-01);
+}
+
+.bg-blue-02 {
+  background-color: var(--blue-02);
+}
+
+.bg-blue-03 {
+  background-color: var(--blue-03);
+}
+
+.section-title {
+  font-size: 18px;
+  position: relative;
+  margin: 24px 0;
+}
+.section-title::before {
+  content: '';
+  position: absolute;
+  top: calc(100% + 8px);
+  width: 50px;
+  height: 1.5px;
+  background-color: var(--blue-01);
+  border-radius: 1px;
+}
